@@ -61,55 +61,55 @@ Contracts have owners with privileged rights to perform admin tasks and need to 
 <details><summary>9 Found Instances</summary>
 
 
-- Found in src/FjordAuctionFactory.sol [Line: 41](src/FjordAuctionFactory.sol#L41)
+- Found in src/FjordAuctionFactory.sol [Line: 21](src/FjordAuctionFactory.sol#L21)
 
 	```solidity
 	    function setOwner(address _newOwner) external onlyOwner {
 	```
 
-- Found in src/FjordAuctionFactory.sol [Line: 57](src/FjordAuctionFactory.sol#L57)
+- Found in src/FjordAuctionFactory.sol [Line: 30](src/FjordAuctionFactory.sol#L30)
 
 	```solidity
 	    ) external onlyOwner {
 	```
 
-- Found in src/FjordPoints.sol [Line: 163](src/FjordPoints.sol#L163)
+- Found in src/FjordPoints.sol [Line: 61](src/FjordPoints.sol#L61)
 
 	```solidity
 	    function setOwner(address _newOwner) external onlyOwner {
 	```
 
-- Found in src/FjordPoints.sol [Line: 172](src/FjordPoints.sol#L172)
+- Found in src/FjordPoints.sol [Line: 65](src/FjordPoints.sol#L65)
 
 	```solidity
 	    function setStakingContract(address _staking) external onlyOwner {
 	```
 
-- Found in src/FjordPoints.sol [Line: 184](src/FjordPoints.sol#L184)
+- Found in src/FjordPoints.sol [Line: 71](src/FjordPoints.sol#L71)
 
 	```solidity
 	    function setPointsPerEpoch(uint256 _points) external onlyOwner checkDistribution {
 	```
 
-- Found in src/FjordStaking.sol [Line: 347](src/FjordStaking.sol#L347)
+- Found in src/FjordStaking.sol [Line: 149](src/FjordStaking.sol#L149)
 
 	```solidity
 	    function setOwner(address _newOwner) external onlyOwner {
 	```
 
-- Found in src/FjordStaking.sol [Line: 352](src/FjordStaking.sol#L352)
+- Found in src/FjordStaking.sol [Line: 153](src/FjordStaking.sol#L153)
 
 	```solidity
 	    function setRewardAdmin(address _rewardAdmin) external onlyOwner {
 	```
 
-- Found in src/FjordStaking.sol [Line: 357](src/FjordStaking.sol#L357)
+- Found in src/FjordStaking.sol [Line: 157](src/FjordStaking.sol#L157)
 
 	```solidity
 	    function addAuthorizedSablierSender(address _address) external onlyOwner {
 	```
 
-- Found in src/FjordStaking.sol [Line: 361](src/FjordStaking.sol#L361)
+- Found in src/FjordStaking.sol [Line: 160](src/FjordStaking.sol#L160)
 
 	```solidity
 	    function removeAuthorizedSablierSender(address _address) external onlyOwner {
@@ -129,7 +129,7 @@ https://github.com/transmissions11/solmate/blob/main/src/utils/SafeTransferLib.s
 <details><summary>1 Found Instances</summary>
 
 
-- Found in src/FjordStaking.sol [Line: 5](src/FjordStaking.sol#L5)
+- Found in src/FjordStaking.sol [Line: 3](src/FjordStaking.sol#L3)
 
 	```solidity
 	import { SafeTransferLib } from "solmate/utils/SafeTransferLib.sol";
@@ -146,49 +146,49 @@ ERC20 functions may not behave as expected. For example: return values are not a
 <details><summary>8 Found Instances</summary>
 
 
-- Found in src/FjordAuction.sol [Line: 151](src/FjordAuction.sol#L151)
+- Found in src/FjordAuction.sol [Line: 54](src/FjordAuction.sol#L54)
 
 	```solidity
 	        fjordPoints.transferFrom(msg.sender, address(this), amount);
 	```
 
-- Found in src/FjordAuction.sol [Line: 174](src/FjordAuction.sol#L174)
+- Found in src/FjordAuction.sol [Line: 70](src/FjordAuction.sol#L70)
 
 	```solidity
 	        fjordPoints.transfer(msg.sender, amount);
 	```
 
-- Found in src/FjordAuction.sol [Line: 193](src/FjordAuction.sol#L193)
+- Found in src/FjordAuction.sol [Line: 83](src/FjordAuction.sol#L83)
 
 	```solidity
 	            auctionToken.transfer(owner, totalTokens);
 	```
 
-- Found in src/FjordAuction.sol [Line: 220](src/FjordAuction.sol#L220)
+- Found in src/FjordAuction.sol [Line: 100](src/FjordAuction.sol#L100)
 
 	```solidity
 	        auctionToken.transfer(msg.sender, claimable);
 	```
 
-- Found in src/FjordAuctionFactory.sol [Line: 63](src/FjordAuctionFactory.sol#L63)
+- Found in src/FjordAuctionFactory.sol [Line: 34](src/FjordAuctionFactory.sol#L34)
 
 	```solidity
 	        IERC20(auctionToken).transferFrom(msg.sender, auctionAddress, totalTokens);
 	```
 
-- Found in src/FjordStaking.sol [Line: 435](src/FjordStaking.sol#L435)
+- Found in src/FjordStaking.sol [Line: 204](src/FjordStaking.sol#L204)
 
 	```solidity
 	        sablier.transferFrom({ from: msg.sender, to: address(this), tokenId: _streamID });
 	```
 
-- Found in src/FjordStaking.sol [Line: 558](src/FjordStaking.sol#L558)
+- Found in src/FjordStaking.sol [Line: 280](src/FjordStaking.sol#L280)
 
 	```solidity
 	            sablier.transferFrom({ from: address(this), to: streamOwner, tokenId: _streamID });
 	```
 
-- Found in src/FjordStaking.sol [Line: 600](src/FjordStaking.sol#L600)
+- Found in src/FjordStaking.sol [Line: 307](src/FjordStaking.sol#L307)
 
 	```solidity
 	        fjordToken.transfer(msg.sender, totalStakedAmount);
@@ -205,13 +205,13 @@ Instead of marking a function as `public`, consider marking it as `external` if 
 <details><summary>2 Found Instances</summary>
 
 
-- Found in src/FjordStaking.sol [Line: 339](src/FjordStaking.sol#L339)
+- Found in src/FjordStaking.sol [Line: 143](src/FjordStaking.sol#L143)
 
 	```solidity
 	    function getStreamData(address _user, uint256 _streamID) public view returns (NFTData memory) {
 	```
 
-- Found in src/FjordStaking.sol [Line: 343](src/FjordStaking.sol#L343)
+- Found in src/FjordStaking.sol [Line: 146](src/FjordStaking.sol#L146)
 
 	```solidity
 	    function getStreamOwner(uint256 _streamID) public view returns (address) {
@@ -228,121 +228,121 @@ Index event fields make the field more quickly accessible to off-chain tools tha
 <details><summary>20 Found Instances</summary>
 
 
-- Found in src/FjordAuction.sol [Line: 91](src/FjordAuction.sol#L91)
+- Found in src/FjordAuction.sol [Line: 26](src/FjordAuction.sol#L26)
 
 	```solidity
 	    event AuctionEnded(uint256 totalBids, uint256 totalTokens);
 	```
 
-- Found in src/FjordAuction.sol [Line: 98](src/FjordAuction.sol#L98)
+- Found in src/FjordAuction.sol [Line: 27](src/FjordAuction.sol#L27)
 
 	```solidity
 	    event TokensClaimed(address indexed bidder, uint256 amount);
 	```
 
-- Found in src/FjordAuction.sol [Line: 105](src/FjordAuction.sol#L105)
+- Found in src/FjordAuction.sol [Line: 28](src/FjordAuction.sol#L28)
 
 	```solidity
 	    event BidAdded(address indexed bidder, uint256 amount);
 	```
 
-- Found in src/FjordAuction.sol [Line: 112](src/FjordAuction.sol#L112)
+- Found in src/FjordAuction.sol [Line: 29](src/FjordAuction.sol#L29)
 
 	```solidity
 	    event BidWithdrawn(address indexed bidder, uint256 amount);
 	```
 
-- Found in src/FjordPoints.sol [Line: 92](src/FjordPoints.sol#L92)
+- Found in src/FjordPoints.sol [Line: 30](src/FjordPoints.sol#L30)
 
 	```solidity
 	    event Staked(address indexed user, uint256 amount);
 	```
 
-- Found in src/FjordPoints.sol [Line: 99](src/FjordPoints.sol#L99)
+- Found in src/FjordPoints.sol [Line: 31](src/FjordPoints.sol#L31)
 
 	```solidity
 	    event Unstaked(address indexed user, uint256 amount);
 	```
 
-- Found in src/FjordPoints.sol [Line: 106](src/FjordPoints.sol#L106)
+- Found in src/FjordPoints.sol [Line: 32](src/FjordPoints.sol#L32)
 
 	```solidity
 	    event PointsDistributed(uint256 points, uint256 pointsPerToken);
 	```
 
-- Found in src/FjordPoints.sol [Line: 113](src/FjordPoints.sol#L113)
+- Found in src/FjordPoints.sol [Line: 33](src/FjordPoints.sol#L33)
 
 	```solidity
 	    event PointsClaimed(address indexed user, uint256 amount);
 	```
 
-- Found in src/FjordStaking.sol [Line: 51](src/FjordStaking.sol#L51)
+- Found in src/FjordStaking.sol [Line: 31](src/FjordStaking.sol#L31)
 
 	```solidity
 	    event Staked(address indexed user, uint16 indexed epoch, uint256 amount);
 	```
 
-- Found in src/FjordStaking.sol [Line: 65](src/FjordStaking.sol#L65)
+- Found in src/FjordStaking.sol [Line: 35](src/FjordStaking.sol#L35)
 
 	```solidity
 	    event RewardAdded(uint16 indexed epoch, address rewardAdmin, uint256 amount);
 	```
 
-- Found in src/FjordStaking.sol [Line: 70](src/FjordStaking.sol#L70)
+- Found in src/FjordStaking.sol [Line: 36](src/FjordStaking.sol#L36)
 
 	```solidity
 	    event RewardClaimed(address indexed user, uint256 amount);
 	```
 
-- Found in src/FjordStaking.sol [Line: 76](src/FjordStaking.sol#L76)
+- Found in src/FjordStaking.sol [Line: 37](src/FjordStaking.sol#L37)
 
 	```solidity
 	    event EarlyRewardClaimed(address indexed user, uint256 rewardAmount, uint256 penaltyAmount);
 	```
 
-- Found in src/FjordStaking.sol [Line: 82](src/FjordStaking.sol#L82)
+- Found in src/FjordStaking.sol [Line: 38](src/FjordStaking.sol#L38)
 
 	```solidity
 	    event ClaimedAll(address indexed user, uint256 totalRewardAmount, uint256 totalPenaltyAmount);
 	```
 
-- Found in src/FjordStaking.sol [Line: 88](src/FjordStaking.sol#L88)
+- Found in src/FjordStaking.sol [Line: 39](src/FjordStaking.sol#L39)
 
 	```solidity
 	    event Unstaked(address indexed user, uint16 indexed epoch, uint256 stakedAmount);
 	```
 
-- Found in src/FjordStaking.sol [Line: 95](src/FjordStaking.sol#L95)
+- Found in src/FjordStaking.sol [Line: 40](src/FjordStaking.sol#L40)
 
 	```solidity
 	    event VestedUnstaked(
 	```
 
-- Found in src/FjordStaking.sol [Line: 104](src/FjordStaking.sol#L104)
+- Found in src/FjordStaking.sol [Line: 43](src/FjordStaking.sol#L43)
 
 	```solidity
 	    event UnstakedAll(
 	```
 
-- Found in src/FjordStaking.sol [Line: 114](src/FjordStaking.sol#L114)
+- Found in src/FjordStaking.sol [Line: 49](src/FjordStaking.sol#L49)
 
 	```solidity
 	    event ClaimReceiptCreated(address indexed user, uint16 requestEpoch);
 	```
 
-- Found in src/FjordStaking.sol [Line: 119](src/FjordStaking.sol#L119)
+- Found in src/FjordStaking.sol [Line: 50](src/FjordStaking.sol#L50)
 
 	```solidity
 	    event RewardPerTokenChanged(uint16 epoch, uint256 rewardPerToken);
 	```
 
-- Found in src/FjordStaking.sol [Line: 126](src/FjordStaking.sol#L126)
+- Found in src/FjordStaking.sol [Line: 51](src/FjordStaking.sol#L51)
 
 	```solidity
 	    event SablierWithdrawn(address indexed user, uint256 streamID, address caller, uint256 amount);
 	```
 
-- Found in src/FjordStaking.sol [Line: 133](src/FjordStaking.sol#L133)
+- Found in src/FjordStaking.sol [Line: 52](src/FjordStaking.sol#L52)
 
 	```solidity
 	    event SablierCanceled(address indexed user, uint256 streamID, address caller, uint256 amount);
@@ -359,7 +359,7 @@ Use descriptive reason strings or custom errors for revert paths.
 <details><summary>1 Found Instances</summary>
 
 
-- Found in src/FjordPoints.sol [Line: 186](src/FjordPoints.sol#L186)
+- Found in src/FjordPoints.sol [Line: 73](src/FjordPoints.sol#L73)
 
 	```solidity
 	            revert();
@@ -376,7 +376,7 @@ Use descriptive reason strings or custom errors for revert paths.
 <details><summary>1 Found Instances</summary>
 
 
-- Found in src/FjordStaking.sol [Line: 310](src/FjordStaking.sol#L310)
+- Found in src/FjordStaking.sol [Line: 120](src/FjordStaking.sol#L120)
 
 	```solidity
 	    modifier onlyRewardAdmin() {
@@ -393,13 +393,13 @@ Consider removing empty blocks.
 <details><summary>2 Found Instances</summary>
 
 
-- Found in src/FjordStaking.sol [Line: 792](src/FjordStaking.sol#L792)
+- Found in src/FjordStaking.sol [Line: 412](src/FjordStaking.sol#L412)
 
 	```solidity
 	    function onStreamWithdrawn(
 	```
 
-- Found in src/FjordStaking.sol [Line: 809](src/FjordStaking.sol#L809)
+- Found in src/FjordStaking.sol [Line: 419](src/FjordStaking.sol#L419)
 
 	```solidity
 	    function onStreamRenounced(uint256 /*streamId*/ ) external override onlySablier {
@@ -416,7 +416,7 @@ Use `e` notation, for example: `1e18`, instead of its full numeric value.
 <details><summary>1 Found Instances</summary>
 
 
-- Found in src/FjordToken.sol [Line: 8](src/FjordToken.sol#L8)
+- Found in src/FjordToken.sol [Line: 5](src/FjordToken.sol#L5)
 
 	```solidity
 	        _mint(msg.sender, 100_000_000 ether);
@@ -433,13 +433,13 @@ it is recommended that the definition be removed when custom error is unused
 <details><summary>2 Found Instances</summary>
 
 
-- Found in src/FjordPoints.sol [Line: 25](src/FjordPoints.sol#L25)
+- Found in src/FjordPoints.sol [Line: 10](src/FjordPoints.sol#L10)
 
 	```solidity
 	    error DistributionNotAllowedYet();
 	```
 
-- Found in src/FjordPoints.sol [Line: 40](src/FjordPoints.sol#L40)
+- Found in src/FjordPoints.sol [Line: 13](src/FjordPoints.sol#L13)
 
 	```solidity
 	    error TotalStakedAmountZero();
@@ -456,19 +456,19 @@ Invoking `SSTORE`operations in loops may lead to Out-of-gas errors. Use a local 
 <details><summary>3 Found Instances</summary>
 
 
-- Found in src/FjordStaking.sol [Line: 579](src/FjordStaking.sol#L579)
+- Found in src/FjordStaking.sol [Line: 293](src/FjordStaking.sol#L293)
 
 	```solidity
 	        for (uint16 i = 0; i < activeDeposits.length; i++) {
 	```
 
-- Found in src/FjordStaking.sol [Line: 706](src/FjordStaking.sol#L706)
+- Found in src/FjordStaking.sol [Line: 366](src/FjordStaking.sol#L366)
 
 	```solidity
 	                for (uint16 i = lastEpochRewarded + 1; i < currentEpoch; i++) {
 	```
 
-- Found in src/FjordStaking.sol [Line: 711](src/FjordStaking.sol#L711)
+- Found in src/FjordStaking.sol [Line: 371](src/FjordStaking.sol#L371)
 
 	```solidity
 	                for (uint16 i = lastEpochRewarded + 1; i < currentEpoch; i++) {
